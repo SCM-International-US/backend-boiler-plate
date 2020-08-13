@@ -4,7 +4,10 @@
 Things you may want to cover:
 
 * Ruby version  
-Created with ruby version `2.7.1p83` 
+Created with ruby version `2.7.1` 
+
+* Rails version
+Created with rails version `6.0.3`
 
 * System dependencies
 
