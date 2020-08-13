@@ -10,14 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_03_163620) do
+ActiveRecord::Schema.define(version: 2020_08_13_154330) do
 
-  create_table "currencies", force: :cascade do |t|
-    t.string "name"
-    t.integer "rate"
-    t.string "country"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  create_table "users", force: :cascade do |t|
+    t.string "user_id"
+    t.string "email"
+    t.string "password_digest"
+    t.boolean "admin?"
+    t.string "session_token"
+    t.string "first_name"
+    t.string "last_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
