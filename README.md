@@ -12,7 +12,7 @@ Created with rails version `6.0.3`
 * System dependencies
 
 * Configuration  
-
+To start the server just run `rails server` you can change the environment from production, dev, etc just uses `rails server --help`
 * Database creation  
 To make changes to the database do not make changes directly to the `schema.rb` file, run the command 
 `rails g migration "short_migration_identifier"` and make descriptions of the changes you want to make to the table
