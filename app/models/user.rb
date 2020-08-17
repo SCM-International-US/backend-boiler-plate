@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   include ActiveModel::Validations
   has_secure_password
+  has_one :cart
 
   validates :password, presence: true, length: {minimum: 6}
   validates :password_confirmation, presence: true
