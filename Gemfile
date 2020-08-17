@@ -29,6 +29,8 @@ gem 'haml'
 # XML to Hash translator
 # gem 'nori'
 
+#devise is used for authentication and email confirmation
+gem 'devise'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 
