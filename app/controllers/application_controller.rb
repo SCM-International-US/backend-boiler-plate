@@ -14,4 +14,11 @@ class ApplicationController < ActionController::API
   def ping
     render json: { data: 'pong' }
   end
+
+  def formsend
+    # makes call to mailer function we need to fill in json rendering and how to receive data
+    # sent from front end.
+    SubmitFormMailerPreview.send_form_as_email.deliver
+    render json: {status: 200}
+  end
 end
