@@ -55,6 +55,8 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  # establishes that in prod we will be using smtp mail server
+  config.action_mailer.delivery_method = :smtp
   # devise config when actually shipping to prod change host: to real URL
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   # Ignore bad email addresses and do not raise email delivery errors.
